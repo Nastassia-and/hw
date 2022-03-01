@@ -3,90 +3,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap');
 /** fonts end */
-
-
-
 /** tabs style start*/
-.tabs{
-    font-family:'Open Sans', sans-serif;
+.tabs {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400; 
     width: 1170px;
     margin: auto;   
     margin-bottom: 50px; 
 }
-
-
-
-.tabs__inlay{
+.tabs__inlay {
     font-size: 14px;
     line-height: 19px;  
     margin-bottom: -1px;  
 }
-  
-
-.tabs__inlay--item{
+.tabs__inlay--item {
     text-transform: uppercase;
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
-    cursor: pointer;
-    
+    cursor: pointer;    
     width: 203px;
     height: 40px;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;     
 }
-
-.tabs__inlay--item:first-child{
+.tabs__inlay--item:first-child {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
     border-bottom-color: white;         
 }
-
-.tabs__inlay--item:focus{
+.tabs__inlay--item:focus {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
-
 }
-
-.tabs__main{
+.tabs__main {
     display: flex;
     justify-content:space-between;
     border: 1px solid #C6CBCD;
  }
-
- .tabs__main--wrapper{
+ .tabs__main--wrapper {
      margin-left: 100px;
  }   
-
-.tabs__title{
+.tabs__title {
     font-weight: bold;
     font-size: 30px;
     line-height: 41px;
-
     width: 570px;
     height: 124px;
     display: flex;
     align-items: center;
     margin-bottom: 27px;
 }
-
-.tabs__text{
+.tabs__text {
     width: 570px;
     font-family: Raleway;
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 27px;
 }
-
 .tabs__text--wrapper{
     margin-bottom: 21px;
 }
-
-.tabs__button{
+.tabs__button {
     width: 270px;
     height: 58px;
     background: #EC7979;
@@ -97,62 +78,49 @@
     color: #FFFFFF;
     margin-bottom: 54px;
 }
-
-.tabs__button:hover{
+.tabs__button:hover {
     background: #AB4949;
 }
-
-.tabs__button:active{
+.tabs__button:active {
     box-shadow: inset 0px 0px 10px #AB4949;
- }
-
- 
+ } 
 /**tabs style end */
-
-
 /** awesome style start*/
 .awesome { 
     font-family: 'Raleway', sans-serif;
     width: 1170px;
     margin: auto;       
 }
-
-.awesome__title{
+.awesome__title {
     font-size: 36px;
     font-weight: 400;
 }
-
-.awesome__title--wrapper{
+.awesome__title--wrapper {
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.awesome__line{
+.awesome__line {
     width: 170px;
     border-bottom: 1px solid #EC7979;
     margin: auto;
     margin-bottom: 40px;
 }
-
-.awesome__subtitle{
+.awesome__subtitle {
     color: #86878B;
     text-align: center;
     margin-bottom: 110px;
 }
-
-.awesome__container{
+.awesome__container {
     display: flex;
     justify-content: space-between;
 }
-
-.awesome__block{
+.awesome__block {
     width: 370px;
     text-align: center;
 }
-
-.awesome__icon--wrapper{
+.awesome__icon--wrapper {
     width: 92px;
     height: 92px;
     display: flex;
@@ -162,12 +130,10 @@
     border-radius: 50%;
     margin: 0 auto 78px;    
 }
-
-.awesome__block--title{
+.awesome__block--title {
     font-family: 'Open Sans', sans-serif ;
     margin-bottom:47px;
 }
-
 /** awesome style end*/
 
 
