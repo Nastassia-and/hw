@@ -1,0 +1,259 @@
+/** fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap');
+/** fonts end */
+/** main style start */
+.wrapper {
+    width: 1170px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;   
+}
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.title-wrapper {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.subtitle {
+    color: #86878B;
+    text-align: center;    
+}
+
+/** main style start */
+/** tabs style start*/
+.tabs {  
+    margin-bottom: 50px; 
+    padding-top: 98px;
+}
+.tabs__inlay {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;  
+    margin-bottom: -1px;  
+}
+.tabs__inlay-item {
+    text-transform: uppercase;
+    padding: 0;
+    border: none;   
+    background-color: transparent;
+    cursor: pointer;    
+    width: 203px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;     
+}
+.tabs__inlay-item:first-child {
+    border: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom-color: white;         
+}
+.tabs__inlay-item:focus {
+    border: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0px 0px;
+}
+.tabs__main {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C6CBCD; /*? 2px бордера "лишние", как подправить высоту блока*/
+ }
+ .tabs__main-wrapper {
+     margin-left: 100px;
+ }   
+.tabs__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    width: 570px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.tabs__text {
+    width: 570px;    
+    margin-bottom: 27px;
+}
+.tabs__text-wrapper {
+    margin-bottom: 21px;
+}
+.tabs__button {
+    font-family: 'Open Sans', sans-serif;
+    width: 270px;
+    height: 58px;
+    background: #EC7979;
+    border: none;
+    font-weight: 600; 
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+}
+.tabs__button:hover {
+    background: #AB4949;
+}
+.tabs__button:active {
+    box-shadow: inset 0px 0px 10px #AB4949;
+ } 
+/**tabs style end */
+/** awesome style start*/
+.awesome {        
+    margin-bottom:  58px ;       
+}
+.awesome__subtitle {
+    margin-bottom: 110px;
+}
+.awesome__container {
+    display: flex;
+    justify-content: space-between;
+}
+.awesome__block {
+    width: 370px;
+    text-align: center;
+}
+.awesome__icon-wrapper {
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto 78px;    
+}
+.awesome__block-title {
+    font-family: 'Open Sans', sans-serif ;
+    margin-bottom:47px;
+}
+/** awesome style end*/
+/** pricing style start*/
+.price {   
+    background: #F5F5F5;
+}
+.price__subtitle {
+    margin-bottom: 79px;
+}
+.price__wrapper {    
+    display: flex;
+    justify-content: space-between;   
+}
+.price__block {
+    width: 370px;
+    height: 510px;
+    text-align: center;  
+    margin-bottom: 50px;  
+}    
+.price__block:hover {
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    margin-top: -20px;
+}
+.price__block-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    color: #FFFFFF;     
+}
+.price__block-name {    
+    height: 56px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;       
+    border: 2px solid #F5F5F5;      
+}
+.price__block-cost {    
+    height: 96px;    
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    border: 2px solid #F5F5F5;
+}    
+.price__block-text {    
+    height: 46px;          
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #F5F5F5;
+}
+.price__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;      
+    text-transform: capitalize;    
+    color: #86878B;
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;  
+}
+/** pricing style end*/
+/** customers style start*/
+.customers__subtitle {    
+    margin-bottom: 83px;    
+}
+.customers__container {   
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;  
+  }
+.customer__block {
+    margin-bottom: 64px;
+}
+.customer__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 180px;      
+    color: #86878B;
+    background: #E2E2E2;
+    border-radius: 10px;
+    margin-bottom: 66px;
+}
+.triangle {
+    position: absolute;
+    top: 169px;
+    left: 85px;
+    width: 21.2px;
+    height: 21.2px;
+    background: #E2E2E2;
+    transform: rotate(45deg);
+}
+.customer__info {
+    display: flex;
+    flex-direction: row;     
+}
+.customer__photo {
+    margin-right: 30px;
+}
+.customer__name {
+    width: 269px;
+    height: 64px;
+    font-family: Open Sans;    
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;    
+    text-transform: capitalize;  
+    margin-bottom: 15px;      
+}
+
+/** customers style end*/
+
+
+
+
+
