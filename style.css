@@ -67,7 +67,7 @@
 }
 .tabs__main {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     border: 1px solid #C6CBCD; /*? 2px бордера "лишние", как подправить высоту блока*/
  }
  .tabs__main-wrapper {
@@ -88,7 +88,7 @@
     width: 570px;    
     margin-bottom: 27px;
 }
-.tabs__text-wrapper{
+.tabs__text-wrapper {
     margin-bottom: 21px;
 }
 .tabs__button {
@@ -156,42 +156,36 @@
     text-align: center;  
     margin-bottom: 50px;  
 }    
-.price__block:hover{
+.price__block:hover {
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
     margin-top: -20px;
 }
-.price__block-name {    
-    height: 56px;display: flex;
+.price__block-black {
+    display: flex;
     justify-content: center;
     align-items: center;
+    background: #333333;
+    color: #FFFFFF;     
+}
+.price__block-name {    
+    height: 56px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
-    text-transform: capitalize;
-    color: #FFFFFF; 
-    background: #333333;
+    text-transform: capitalize;       
     border: 2px solid #F5F5F5;      
-    }
-.price__block-cost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.price__block-cost {    
     height: 96px;    
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;    
-    color: #FFFFFF;
-    background: #333333;
+    line-height: 42px;
     border: 2px solid #F5F5F5;
 }    
-.price__block-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.price__block-text {    
     height: 46px;          
     color: rgba(255, 255, 255, 0.5);
-    background: #333333;
     border: 2px solid #F5F5F5;
 }
 .price__list-item {
@@ -229,7 +223,6 @@
     background: #E2E2E2;
     border-radius: 10px;
     margin-bottom: 66px;
-    z-index: 2;                 /*? не перекрывает блок с z-index 1 */
 }
 .triangle {
     position: absolute;
@@ -239,7 +232,6 @@
     height: 21.2px;
     background: #E2E2E2;
     transform: rotate(45deg);
-    z-index: 1;                 /*? не получилось */    
 }
 .customer__info {
     display: flex;
