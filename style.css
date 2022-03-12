@@ -31,7 +31,6 @@
     color: #86878B;
     text-align: center;    
 }
-
 /** main style start */
 /** axit style start*/
 header {
@@ -42,8 +41,7 @@ header {
     align-items: center;
     background: #000000;
     padding: 0 170px 0 115px;   
-}
-    
+}    
 .header__logo {
     text-decoration: none;
 }
@@ -62,15 +60,13 @@ header {
     font-size: 14px;
     line-height: 19px;
     text-transform: capitalize;
-   }
-.axit__main {
-    padding-top: 208px;
-    background-image: url(./img/bg.jpg); 
-    /* TODO наложить два bg друг на друга и к верхнему применить прозрачность */   
-    display: flex;   
-
 }
-/*.axit__text-wrapper {
+.axit__main {    
+    padding-top: 208px;
+    background: url(./img/bg.jpg), rgba(0, 0, 0, 0.5);           /*?не получается затемнить bg */   
+    display: flex; 
+}
+/*.axit__text-wrapper {     меняем или нет ширину огранич.контейнера
     margin-left: 170px;
 }*/
 .axit__main-logo {
@@ -148,6 +144,9 @@ h1 {
     color: #333333;  
     margin-bottom: 45px;  
 }
+.color-text {
+    color: #EC7979;
+}
 .axit__input {
     width: 370px;
     height: 38px;
@@ -160,7 +159,6 @@ h1 {
     text-transform: capitalize;
     margin-bottom: 33px;
 }
-
 .axit__aside-button {
     margin-top: 42px;
     width: 470px;
@@ -185,7 +183,7 @@ h1 {
     background: #F8EFEF;
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
 }
 .axit__media-block {
     width: 470px;
@@ -214,6 +212,11 @@ h1 {
 .icon-media {
     width: 70px;
     height: 70px;
+    color: #CCCCCC;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /** axit style end*/
 /** tabs style start*/
@@ -251,11 +254,11 @@ h1 {
 .tabs__main {
     display: flex;
     justify-content:space-between;
-    border: 1px solid #C6CBCD; /*? 2px бордера "лишние", как подправить высоту блока*/
+    border: 1px solid #C6CBCD; /*? 2px бордера "лишние"*/
  }
  .tabs__main-wrapper {
      margin-left: 100px;
- }   
+}   
 .tabs__title {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -290,7 +293,7 @@ h1 {
 }
 .tabs__button:active {
     box-shadow: inset 0px 0px 10px #AB4949;
- } 
+} 
 /**tabs style end */
 /** awesome style start*/
 .awesome {        
@@ -343,44 +346,36 @@ h1 {
     text-align: center;  
     margin-bottom: 50px;  
 }    
-.price__block:hover{
+.price__block:hover {
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
     margin-top: -20px;
 }
-.price__block-name {    
-    height: 56px;
+.price__block-black {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #333333;
+    border: 2px solid #F5F5F5;    
+}
+.price__block-name {    
+    height: 56px;    
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
     text-transform: capitalize;
-    color: #FFFFFF; 
-    background: #333333;
-    border: 2px solid #F5F5F5;      
-    }
-.price__block-cost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #FFFFFF;    
+}
+.price__block-cost {    
     height: 96px;    
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;    
-    color: #FFFFFF;
-    background: #333333;
-    border: 2px solid #F5F5F5;
+    color: #FFFFFF;    
 }    
-.price__block-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.price__block-text {   
     height: 46px;          
-    color: rgba(255, 255, 255, 0.5);
-    background: #333333;
-    border: 2px solid #F5F5F5;
+    color: rgba(255, 255, 255, 0.5);   
 }
 .price__list-item {
     display: flex;
@@ -420,7 +415,11 @@ h1 {
     background: #E2E2E2;
     border-radius: 10px;
     margin-bottom: 66px;
-    z-index: 2;                 /*? не перекрывает блок с z-index 1 */
+}
+.customer__speak {
+    width: 370px;
+    height: 105px;
+    text-align: center;
 }
 .triangle {
     position: absolute;
@@ -429,8 +428,7 @@ h1 {
     width: 21.2px;
     height: 21.2px;
     background:  #E2E2E2;
-    transform: rotate(45deg);
-    z-index: 1;                 /*? не получилось */    
+    transform: rotate(45deg); 
 }
 .customer__info {
     display: flex;
@@ -452,7 +450,7 @@ h1 {
 /** customers style end*/
 /** stylish style start*/
 .stylish {
-    background-image: url(./img/bg_stylish.jpg);
+    background: url(./img/bg_stylish.jpg),rgba(0, 0, 0, 0.5);   /*? */
 }
 .stylish__title-wrapper {
     padding-top: 50px;
@@ -489,11 +487,9 @@ h1 {
 .contact__subtitle {
     margin-bottom: 89px;
 }
-.contact__forms {
+.contact__form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 .contact__form1 {
     display: flex;
@@ -515,7 +511,6 @@ h1 {
     text-transform: capitalize;
     color: #FFFFFF;
 }
-
 .contact__input {
     width: 571px;
     height: 38px;
@@ -539,29 +534,33 @@ h1 {
     color: #BDBDBD;
     text-transform: capitalize;
 }
-.contact__message::placeholder { /*? сделать текст в левый вкрхний угол */
-}
 /** contact style end*/
 /**footer style start*/
-footer {
+footer {   
     background: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .footer__media-icons {
-    margin-top: 35px;
-    margin-bottom: 28px;
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    align-items: center; 
+    text-align: center;
 }
 .footer__icon-media {
-    margin-right: 44px;
+    color: #CCCCCC;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 45px 35px 0;
 }
 .footer__text {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 27px;
 }
-
 /**footer style end*/
 
 
