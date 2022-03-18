@@ -72,9 +72,9 @@ header {
 }
 /**header style end*/
 /**axit style start*/
-.axit__main {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg.jpg) no-repeat;
-    background-size: contain;
+.axit__main {  
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg.jpg) center no-repeat;    
     padding-top: 208px;
 }
 .axit__container {
@@ -144,7 +144,7 @@ h1 {
     align-items: center;
 }
 .axit__aside-title {
-    width: 100%;
+    width: 85%;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -196,7 +196,7 @@ h1 {
     align-items: center;
     height: 140px;
     background: #F8EFEF;    
-    margin-bottom: 109px;
+    margin-bottom: 100px;
 }
 .axit__media-block {
     width: 40%;   
@@ -275,11 +275,13 @@ h1 {
     border-radius: 5px 5px 0px 0px;
 }
 .tabs__main {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content:space-between;
     border: 1px solid #C6CBCD;
  }
- .tabs__main-wrapper {
+.tabs__main-wrapper {
      margin-left: 8%;
 }   
 .tabs__title {
@@ -287,13 +289,14 @@ h1 {
     font-weight: bold;
     font-size: 30px;
     line-height: 41px;
-    height: 124px;
+    height: 23%;
     display: flex;
     align-items: center;
     margin-bottom: 27px;
 }
 .tabs__text {
-    width: 95%;    
+    width: 95%; 
+    height: 30%;   
     margin-bottom: 27px;
 }
 .tabs__text-wrapper{
@@ -308,7 +311,7 @@ h1 {
     font-weight: 600; 
     line-height: 25px;
     color: #FFFFFF;
-    margin-bottom: 54px;
+    margin-bottom: 30%;
 }
 .tabs__button:hover {
     background: #AB4949;
@@ -316,8 +319,8 @@ h1 {
 .tabs__button:active {
     box-shadow: inset 0px 0px 10px #AB4949;
 } 
-.tabs__img {
-    height: 100%;
+.tabs__img {    
+    height: 100% ;
 }
 /** awesome style start*/
 .awesome {        
@@ -480,7 +483,7 @@ h1 {
 /** customers style end*/
 /** stylish style start*/
 .stylish {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg_stylish.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg_stylish.jpg) center no-repeat;
 }
 .stylish__title-wrapper {
     padding-top: 50px;
@@ -594,6 +597,112 @@ footer {
     margin-bottom: 27px;
 }
 /**footer style end*/
+@media only screen and (max-device-width : 1215px ) {
+    .wrapper {
+        margin: 0 20px
+    }
+    .axit__container {
+        margin: 0 20px 0 10%;
+    }    
+}
+@media only screen and (max-device-width : 1024px ) {
+    .axit__main-logo1 {
+        width: 69px;
+        height: 41px;
+    }
+    .axit__main-logo2 {
+        width: 42px;
+        height: 41px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .axit__text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .axit__aside-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .axit__media-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .axit__media-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .tabs__title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .tabs__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .axit__media {
+        margin-bottom: 50px;
+    }
+    .tabs {
+        margin-bottom: 50px;
+    }
+    .awesome__subtitle {
+        margin-bottom: 65px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .line {
+        width: 142px;
+    }
+    .awesome__icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 33px;
+    }
+    .awesome__block-title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 17px;
+    }
+    .customers {
+        padding: 0;
+    }
+    .customers__subtitle {
+        margin-bottom: 32px;
+    }
+    .customer__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .customer__name {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 9px;
+    }
+    .customer__job {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .customer__block {
+        margin-bottom: 59px;
+    }
+    .stylish__subtitle {
+        margin-bottom: 32px;
+    }
+}
+
 
 
 
