@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap');
 /** main style start */
 .wrapper {
@@ -12,12 +12,8 @@
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-}
-.title-wrapper {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 75px 0;
 }
 .line {
     width: 20%;
@@ -57,8 +53,7 @@ header {
 .header__list {
     width: 40%;   
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 .header__list-item {    
     text-decoration: none;
@@ -73,8 +68,8 @@ header {
 /**header style end*/
 /**axit style start*/
 .axit__main {  
-    width: 100%;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg.jpg) center no-repeat;    
+    background-size: 100%;
     padding-top: 208px;
 }
 .axit__container {
@@ -85,22 +80,15 @@ header {
 }
 .axit__main-logo {
     text-decoration: none;
-    margin-bottom: 500px;
-}
-.axit__logo {
-    margin-bottom: 73px;
 }
 h1 {
-    font-style: normal;
+    font-family: 'Raleway';    
     font-weight: 500;
     font-size: 48px;
-    line-height: 56px;    
+    line-height: 56px;      
     text-transform: uppercase;    
-    color: #FFFFFF;    
-}
-.h1-wrapper {
-    width: 95%;    
-    margin-bottom: 55px;
+    color: #FFFFFF; 
+    margin: 72px 0 55px 0;   
 }
 .axit__line {
     width: 20%;
@@ -121,7 +109,7 @@ h1 {
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0);
     border: 2px solid #FFFFFF;
-    width: 30%;
+    width: 270px;
     height: 58px;   
     margin-bottom: 185px;
 }
@@ -132,21 +120,18 @@ h1 {
 .axit__button:active {
     background: #AB4949;    
 }
-.axit__aside {
-    width: 80%;
-    min-width: 288px;
-    max-width: 398px;
+.axit__form {
+    width: 900px;/*470px*/
     height: 450px;
     background: #FFFFFF;
     border-radius: 10px;    
-}
-.axit__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 40px;
 }
-.axit__aside-title {
-    width: 85%;
+.axit__form-title {
+    width: 360px;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -163,7 +148,7 @@ h1 {
     color: #EC7979;
 }
 .axit__input {
-    width: 85%;
+    width: 370px;
     height: 38px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -174,7 +159,7 @@ h1 {
     text-transform: capitalize;
     margin-bottom: 33px;
 }
-.axit__aside-button {
+.axit__form-button {
     margin-top: 42px;
     width: 100%;
     height: 60px;
@@ -187,10 +172,10 @@ h1 {
     line-height: 20px;
     color: #FFFFFF;
 }
-.axit__aside-button:hover {
+.axit__form-button:hover {
     background: #AB4949;
 }
-.axit__aside-button:active {
+.axit__form-button:active {
     box-shadow: inset 0px 0px 10px #AB4949;
 }
 .axit__media {
@@ -360,6 +345,7 @@ h1 {
 /** pricing style start*/
 .price {   
     background: #F5F5F5;
+    background-size: 100%;
 }
 .price__subtitle {
     margin-bottom: 79px;
@@ -472,6 +458,8 @@ h1 {
 }
 .customer__info-wrapper {
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
 }
 .customer__name {
     font-family: Open Sans;    
@@ -485,8 +473,9 @@ h1 {
 /** stylish style start*/
 .stylish {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg_stylish.jpg) center no-repeat;
+    background-size: 100%;
 }
-.stylish__title-wrapper {
+.stylish__title {
     padding-top: 50px;
     color: #FFFFFF;
 }
@@ -497,7 +486,10 @@ h1 {
     margin-bottom: 73px;
     color: #FFFFFF;
 }
-.stylish__button {
+.stylish__button { 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);   
     font-family: Open Sans;
     font-weight: 600;
     line-height: 25px;
@@ -505,7 +497,7 @@ h1 {
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #FFFFFF;
-    width: 30%;
+    width: 370px;
     height: 58px;
     margin-bottom: 50px;
 }
@@ -531,12 +523,10 @@ h1 {
     flex-direction: column;
     margin-right: 5%;
 }
-.contact__button-wrapper {
-    display: flex;
-    justify-content: center ;
-    margin-bottom: 50px;
-}
 .contact__button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
     background: #EC7979;
     width: 30%;
     height: 58px;
@@ -546,6 +536,7 @@ h1 {
     line-height: 25px;
     text-transform: capitalize;
     color: #FFFFFF;
+    margin-bottom: 50px;
 }
 .contact__input {
     width: 100%;
@@ -832,7 +823,7 @@ footer {
         height: 3px;
         width: 100%;
         position: absolute;
-        background: #515758;
+        background: white;
         margin: 0 auto;
     }
     .menu-burger__header span{
