@@ -67,9 +67,9 @@ header {
 }
 /**header style end*/
 /**axit style start*/
-.axit__main {  
+.axit__main {     
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg.jpg) center no-repeat;    
-    background-size: 100%;
+    background-size: 100% 100%;
     padding-top: 208px;
 }
 .axit__container {
@@ -473,7 +473,7 @@ h1 {
 /** stylish style start*/
 .stylish {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg_stylish.jpg) center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .stylish__title {
     padding-top: 50px;
@@ -606,6 +606,10 @@ footer {
         width: 42px;
         height: 41px;
     }
+    .axit__form {
+        width: 398px;
+        height: 450px;
+    }
     h1 {
         font-size: 36px;
         line-height: 42px;
@@ -705,6 +709,9 @@ footer {
         align-items: center;
         padding-bottom: 20px;
     }
+    .axit__form {
+        margin: 0;
+    }
     .axit__logo {
         display: none;
     }
@@ -718,9 +725,6 @@ footer {
     .axit__text {
         margin: auto;
         margin-bottom: 42px;
-    }
-    .axit {
-       background-size: cover;
     }
     .axit__main {
         padding-top: 85px;
@@ -747,8 +751,13 @@ footer {
     .axit__media-title {
         justify-content: center;
     }
-    .tabs__img-wrapper {
+    .tabs__img {
         display: none;
+    }
+    .tabs__button { 
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);   
     }
     .tabs__main-wrapper {
         margin: 0;
@@ -760,10 +769,6 @@ footer {
         text-align: center;
         margin: auto ;
         margin-bottom: 27px;
-    }
-    .tabs__button-wrapper {
-        display: flex;
-        justify-content: center;
     }
     .awesome__container {
         flex-direction: column;
@@ -882,7 +887,7 @@ footer {
         height: 23px;
     }
     .axit__button {
-        width: 80%;
+        width: 288px;
         font-size: 18px;
         line-height: 25px;
     }
@@ -930,10 +935,10 @@ footer {
         line-height: 15px;
     }
     .stylish__button {
-        width: 80%;
+        width: 288px;
     }
     .contact__button {
-        width: 80%;
+        width: 288px;
     }    
 }
 
