@@ -73,8 +73,8 @@ header {
     padding-top: 208px;
 }
 .axit__container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 470px;
     max-width: 1170px;
     margin: auto;
 }
@@ -101,6 +101,9 @@ h1 {
     width: 35%;    
     margin-bottom: 42px;
 }
+.axit__text-wrapper {
+    margin-right: 15px;
+}
 .axit__button {
     font-family: 'Open Sans', sans-serif;   
     font-weight: 600;    
@@ -121,14 +124,13 @@ h1 {
     background: #AB4949;    
 }
 .axit__form {
-    width: 900px;/*470px*/
+    width: 470px;
     height: 450px;
     background: #FFFFFF;
     border-radius: 10px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 40px;
 }
 .axit__form-title {
     width: 360px;
@@ -606,6 +608,9 @@ footer {
         width: 42px;
         height: 41px;
     }
+    .axit__container {
+        grid-template-columns: 1fr 398px;
+    }    
     .axit__form {
         width: 398px;
         height: 450px;
@@ -704,6 +709,7 @@ footer {
 }
 @media only screen and (max-device-width : 900px ) {
     .axit__container {
+        display: flex;
         flex-direction: column;
         margin: auto;
         align-items: center;
