@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap');
-/** main style start */
 .wrapper {
     max-width: 1170px;
     margin: auto;
@@ -25,15 +24,10 @@
     color: #86878B;
     text-align: center;    
 }
-/** main style end */
-/**header style start*/
 header {    
-    width: 100%;
     height: 75px;
-    margin: auto;
     background: #000000;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -52,8 +46,7 @@ header {
 }
 .header__list {
     width: 40%;   
-    display: flex;
-    flex-direction: row;    
+    display: flex;   
 }
 .header__list-item {    
     text-decoration: none;
@@ -63,13 +56,11 @@ header {
     font-size: 14px;
     line-height: 19px;
     text-transform: capitalize;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 .icon-size{
     font-size: 100px;
 }
-/**header style end*/
-/**axit style start*/
 .axit__main {     
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg.jpg) center no-repeat;    
     background-size: 100% 100%;
@@ -100,6 +91,10 @@ h1 {
     margin-bottom: 42px;
 }
 .axit__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     color: #FFFFFF;
     width: 35%;    
     margin-bottom: 42px;
@@ -151,7 +146,7 @@ h1 {
 }
 .color-text {
     color: #EC7979;
-    margin: auto;
+    margin: 8px;
 }
 .axit__input {
     width: 370px;
@@ -188,15 +183,13 @@ h1 {
     display: flex;
     align-items: center;
     height: 140px;
-    background: #F8EFEF;    
-    margin-bottom: 100px;
+    background: #F8EFEF;   
 }
 .axit__media-block {
     width: 40%;   
 }
 .axit__media-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -218,7 +211,6 @@ h1 {
 .axit__media-icon {
     width: 55%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -235,11 +227,8 @@ h1 {
     text-decoration: none;
     color: #CCCCCC;;
 }
-
-/**axit style end*/
-/** tabs style start*/
 .tabs {
-    margin-bottom: 110px;
+    padding: 100px 0;
 }
 .tabs__inlay {
     font-family: 'Open Sans', sans-serif;
@@ -271,7 +260,6 @@ h1 {
 }
 .tabs__main {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content:space-between;
     border: 1px solid #C6CBCD;
@@ -289,12 +277,9 @@ h1 {
     align-items: center;
     margin-bottom: 27px;
 }
-.tabs__text {
-    width: 95%;   
-    margin-bottom: 27px;
-}
 .tabs__text-wrapper{
-    margin-bottom: 21px;
+    width: 95%;   
+    padding-bottom: 25px;
 }
 .tabs__button {
     font-family: 'Open Sans', sans-serif;
@@ -305,7 +290,6 @@ h1 {
     font-weight: 600; 
     line-height: 25px;
     color: #FFFFFF;
-    margin-bottom: 70px;
 }
 .tabs__button:hover {
     background: #AB4949;
@@ -316,9 +300,8 @@ h1 {
 .tabs__img {    
     height: 100% ;
 }
-/** awesome style start*/
 .awesome {        
-    margin-bottom:  58px ;       
+    padding-bottom:  60px;       
 }
 .awesome__subtitle {
     margin-bottom: 110px;
@@ -349,8 +332,6 @@ h1 {
     line-height: 33px;
     text-transform: capitalize;
 }
-/** awesome style end*/
-/** pricing style start*/
 .price {   
     background: #F5F5F5;
     background-size: 100%;
@@ -366,7 +347,7 @@ h1 {
     width: 32%;
     height: 510px;
     text-align: center;  
-    margin-bottom: 50px;  
+    margin-bottom: 100px;  
 }    
 .price__block:hover {
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
@@ -405,7 +386,6 @@ h1 {
 .price__list {
     height: 16%;
 }
-
 .price__list-item {
     display: flex;
     justify-content: center;
@@ -416,22 +396,18 @@ h1 {
     background: #FFFFFF;
     border: 2px solid #F5F5F5;  
 }
-/** pricing style end*/
-/** customers style start*/
 .customers {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .customers__subtitle {    
     margin-bottom: 83px;    
 }
 .customers__container {   
     display: flex; 
-    flex-direction: row;
     justify-content: space-between;  
   }
 .customer__block {
     width: 32%;
-    margin-bottom: 64px;
 }
 .customer__text {
     position: relative;
@@ -446,7 +422,7 @@ h1 {
     margin-bottom: 66px;
 }
 .customer__speak {
-    width: 95%;
+    width: 80%;
     height: 105px;
     text-align: center;
 }
@@ -461,7 +437,6 @@ h1 {
 }
 .customer__info {
     display: flex;
-    flex-direction: row; 
     justify-content: left;    
 }
 .customer__info-wrapper {
@@ -477,13 +452,16 @@ h1 {
     text-transform: capitalize;  
     margin-bottom: 15px;      
 }
-/** customers style end*/
-/** stylish style start*/
 .stylish {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/bg_stylish.jpg) center no-repeat;
     background-size: 100% 100%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding-bottom: 50px;
 }
 .stylish__title {
+    font-size: 36px;
+    line-height: 42px; 
     padding-top: 50px;
     color: #FFFFFF;
 }
@@ -491,6 +469,8 @@ h1 {
     border-bottom: 1px solid #FFFFFF;
 }
 .stylish__subtitle {
+    font-size: 18px;
+    line-height: 21px;
     margin-bottom: 73px;
     color: #FFFFFF;
 }
@@ -507,14 +487,14 @@ h1 {
     border: 2px solid #FFFFFF;
     width: 370px;
     height: 58px;
-    margin-bottom: 50px;
 }
 .stylish__button-wrapper {
     display: flex;
     justify-content: center;
 }
-/** stylish style end*/
-/** contact style start*/
+.contact {
+    padding-bottom: 50px;
+}
 .contact__title-wrapper {
     padding-top: 50px;
 }
@@ -544,7 +524,6 @@ h1 {
     line-height: 25px;
     text-transform: capitalize;
     color: #FFFFFF;
-    margin-bottom: 50px;
 }
 .contact__input {
     width: 100%;
@@ -569,17 +548,15 @@ h1 {
     color: #BDBDBD;
     text-transform: capitalize;
 }
-/** contact style end*/
-/**footer style start*/
 footer {   
     background: #000000;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 .footer__media-icons {
     display: flex;
-    flex-direction: row;
     align-items: center; 
     text-align: center;
 }
@@ -592,11 +569,13 @@ footer {
     margin: 40px 45px 35px 0;
 }
 .footer__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 27px;
 }
-/**footer style end*/
 @media only screen and (max-device-width : 1215px ) {
     .wrapper {
         margin: 0 20px
@@ -781,13 +760,17 @@ footer {
         left: 50%;
         transform: translate(-50%, 0);   
     }
+    .tabs__main {
+        flex-direction: column;
+        padding: 50px 0;
+    }
     .tabs__main-wrapper {
         margin: 0;
     }
     .tabs__title {
         justify-content: center;
     }
-    .tabs__text {
+    .tabs__text-wrapper {
         text-align: center;
         margin: auto ;
         margin-bottom: 27px;
@@ -946,10 +929,7 @@ footer {
     .tabs__text {
         font-size: 13px;
         line-height: 15px;
-    }
-    .tabs__button {
-        margin-bottom: 70px;
-    }
+    }    
     .title {
         font-size: 18px;
         line-height: 21px;  
